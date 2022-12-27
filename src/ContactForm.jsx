@@ -26,6 +26,7 @@ const ContactUs = () => {
           setStatus("failure");
         }
       );
+    e.target.reset()
   };
 
   return (
