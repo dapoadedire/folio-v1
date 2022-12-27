@@ -14,15 +14,13 @@ const About = () => {
       <div className="about__content">
         <h2 className="about__title">About Me</h2>
         <p className="about__text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta,
-          impedit in ratione omnis, consequuntur quis magni reiciendis earum,
+          A townhall ... different from balablu , blublu bulaba.
           <Italics>voluptatum</Italics> quod quia. Quisquam, quae. Quisquam,
           quae. vitae veniam eaque minus autem tempore cum! Similique quisquam
           aliquid autem. Lorem ipsum dolor sit amet, consectetur adipisicing
           elit. Laudantium quo incidunt aut eveniet sapiente, repellat enim
           minima rem distinctio quidem deserunt expedita
         </p>
-        
 
         <button className="about__sayhello">
           Say Hello

@@ -101,7 +101,6 @@ img {
   flex-grow: 1;
 }
 
-
 .about__content button {
   margin-top: 1rem;
   padding: 0.8rem 1rem;
@@ -152,8 +151,6 @@ img {
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
-
-
 
 .project__image {
   margin: 0.5rem;
@@ -280,6 +277,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.5);
   background: black;
   color: white;
+  margin-bottom: 2rem;
 }
 
 .contact-form form button:hover {
@@ -356,3 +354,19 @@ footer ul li a {
   font-size: 1.2rem;
   font-weight: 500;
 }
+
+.success-message {
+  color: green;
+  font-size: 1.2rem;
+}
+
+.failure-message {
+  color: red;
+  font-size: 1.2rem;
+}
+
+.loading-indicator {
+  color: blue;
+  font-size: 1.2rem;
+}
+
