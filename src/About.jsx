@@ -22,6 +22,7 @@ const About = () => {
           elit. Laudantium quo incidunt aut eveniet sapiente, repellat enim
           minima rem distinctio quidem deserunt expedita
         </p>
+        
 
         <button className="about__sayhello">
           Say Hello
