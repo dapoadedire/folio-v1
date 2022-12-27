@@ -39,8 +39,6 @@ const ContactUs = () => {
         placeholder="johndoe@worldwideweb.com"
         name="user_email"
         required
-      
-
       />
       <label htmlFor="messsage">Message:</label>
       <textarea
