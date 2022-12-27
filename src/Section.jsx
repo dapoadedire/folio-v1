@@ -5,12 +5,14 @@ import Skills from "./Skills";
 
 const Section = () => {
   return (
-    <>
-      <About />
+    <main>
+       <About />
       <Skills />
       <Project />
       <ContactForm />
-    </>
+    </main>
+     
+  
   );
 };
 

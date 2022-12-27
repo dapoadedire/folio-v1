@@ -70,14 +70,14 @@ const ContactUs = () => {
 
 const ContactForm = () => {
   return (
-    <div className="contact-form">
+    <section className="contact-form">
       <h2>Contact Me</h2>
       <p>
         I am currently looking for a full-time position as a Frontend Developer.
         If you have a position available, please reach out to me.
       </p>
       <ContactUs />
-    </div>
+    </section>
   );
 };
 
