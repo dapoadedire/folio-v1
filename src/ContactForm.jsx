@@ -47,9 +47,7 @@ const ContactUs = () => {
         name="message"
         placeholder="Hello, I would like to hire you for a project."
         required
-      />
-      <button type="submit">Send</button>
-      <div className="message">
+      /><div className="message">
         {status === "success" && (
           <div className="success-message">
             Thank you for reaching out! I will get back to you as soon as
@@ -65,6 +63,8 @@ const ContactUs = () => {
           <div className="loading-indicator">Sending email...</div>
         )}
       </div>
+      <button type="submit">Send</button>
+      
     </form>
   );
 };

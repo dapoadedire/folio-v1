@@ -394,6 +394,11 @@ transition: all 0.2s ease;
   font-weight: 500;
 }
 
+.message{
+  margin-bottom: 1rem;
+  transition: all 0.2s ease;
+}
+
 .success-message {
   color: green;
   font-size: 1.2rem;
