@@ -15,10 +15,10 @@ function App() {
       <Section />
       <Footer />
       <AnimatedCursor
-        innerSize={10}
-        outerSize={20}
+        innerSize={8}
+        outerSize={16}
         color="0, 0, 0"
-        outerAlpha={1}
+        outerAlpha={0.6}
         innerScale={2}
         outerScale={4}
         hasBlendMode={true}

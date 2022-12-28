@@ -1,12 +1,6 @@
-// import image from assets folder
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import profile from "./assets/profile-photo.jpeg";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-
-const Italics = ({ children }) => (
-  <span className="italic text-gray-500">{children}</span>
-);
 
 const About = () => {
   return (
@@ -35,5 +29,10 @@ const About = () => {
     </section>
   );
 };
+
+const Italics = ({ children }) => (
+  <span className="italic text-gray-500">{children}</span>
+);
+
 
 export default About;
