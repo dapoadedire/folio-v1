@@ -218,6 +218,14 @@ html[data-theme="dark"] button{
   color: black;
 }
 
+html[data-theme="dark"] .project__container h2 {
+  border-bottom: 3px solid white !important;
+}
+
+html[data-theme="dark"] .project__container p a {
+  color: white;
+}
+
 .project__content {
   margin-top: 2em;
   display: grid;
@@ -277,6 +285,8 @@ html[data-theme="dark"] .project__card:hover {
   font-size: 1.1rem;
   line-height: 1.5;
 }
+
+
 
 .project__languages {
   display: flex;

@@ -37,7 +37,7 @@ const ContactMe = () => {
       <input
         id="email"
         type="email"
-        placeholder="johndoe@worldwideweb.com"
+        placeholder="example@gmail.com"
         name="user_email"
         required
       />

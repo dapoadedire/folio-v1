@@ -68,7 +68,7 @@ const Project = () => {
       <h2 className="project__title">Projects</h2>
       <p className="project__subtitle">
         Here are some of my projects. You can find more on my{" "}
-        <a href="https://www.github.com/dapoadedire">Github</a>
+        <a href="https://www.github.com/dapoadedire">Github Profile.</a>
       </p>
 
       <div className="project__content">
