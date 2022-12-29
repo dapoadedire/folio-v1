@@ -8,12 +8,16 @@ const About = () => {
       <div className="about__content">
         <h2 className="about__title">About Me</h2>
         <p className="about__text">
-          A townhall ... different from balablu , blublu bulaba.
-          <Italics>voluptatum</Italics> quod quia. Quisquam, quae. Quisquam,
-          quae. vitae veniam eaque minus autem tempore cum! Similique quisquam
-          aliquid autem. Lorem ipsum dolor sit amet, consectetur adipisicing
-          elit. Laudantium quo incidunt aut eveniet sapiente, repellat enim
-          minima rem distinctio quidem deserunt expedita
+          As an electronics and electrical engineering major with a background
+          in software development, I have a strong foundation in both technical
+          and creative fields. With over two years of experience, I am
+          constantly learning and improving my skills to become a
+          <Italics> senior-level developer</Italics>.In addition to my passion
+          for technology and programming, I am also curious and enjoy exploring
+          new areas, such as psychology and non-fiction literature. I also enjoy
+          participating in open source projects and writing technical articles.
+          In my free time, I enjoy gardening and photography as a way to relax
+          and engage in creative pursuits.
         </p>
 
         <button className="about__sayhello">
@@ -33,6 +37,5 @@ const About = () => {
 const Italics = ({ children }) => (
   <span className="italic text-gray-500">{children}</span>
 );
-
 
 export default About;

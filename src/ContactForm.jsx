@@ -26,7 +26,7 @@ const ContactUs = () => {
           setStatus("failure");
         }
       );
-    e.target.reset()
+    e.target.reset();
   };
 
   return (
@@ -47,7 +47,8 @@ const ContactUs = () => {
         name="message"
         placeholder="Hello, I would like to hire you for a project."
         required
-      /><div className="message">
+      />
+      <div className="message">
         {status === "success" && (
           <div className="success-message">
             Thank you for reaching out! I will get back to you as soon as
@@ -64,7 +65,6 @@ const ContactUs = () => {
         )}
       </div>
       <button type="submit">Send</button>
-      
     </form>
   );
 };

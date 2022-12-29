@@ -7,14 +7,12 @@ import Skills from "./Skills";
 const Section = () => {
   return (
     <main>
-       <About />
+      <About />
       <Skills />
       <Project />
       <Articles />
       <ContactForm />
     </main>
-     
-  
   );
 };
 
