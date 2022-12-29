@@ -1,4 +1,21 @@
+import { faMoon } from '@fortawesome/free-regular-svg-icons';
+import { faSun } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useEffect, useState } from 'react';
 const Header = () => {
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  const toggleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+      
+    } else {
+      setTheme("light");
+    }
+  };
+  useEffect(() => {
+    localStorage.setItem('theme', theme);
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
   return (
     <header>
       <div className="logo">
@@ -6,8 +23,18 @@ const Header = () => {
           <a href="#home">Dapo Adedire</a>
         </h2>
       </div>
+      
       <nav className="navbar" role={"navigation"}>
+       
+          {theme === "light" ? (
+            <FontAwesomeIcon icon={faMoon} className="toggle light" onClick={toggleTheme} />
+          ) : (
+              <FontAwesomeIcon icon={faSun} className="toggle dark" onClick={toggleTheme} />
+          )}
+      
         <ul>
+          
+          
           <li>
             <a href="#home">Home</a>
           </li>
@@ -31,3 +58,4 @@ const Header = () => {
 };
 
 export default Header;
+
