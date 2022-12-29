@@ -2,6 +2,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import profile from "./assets/profile-photo.jpeg";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
+import resume from "./assets/___dapoadedire.pdf";
+import { faFile } from "@fortawesome/free-regular-svg-icons";
+
+
 const About = () => {
   return (
     <section className="about__container" id="about">
@@ -18,7 +22,13 @@ const About = () => {
           participating in open source projects and writing technical articles.
           In my free time, I enjoy gardening and photography as a way to relax
           and engage in creative pursuits.
+        
         </p>
+        <a href={resume} target="_blank" rel="noreferrer">
+          <button className="resume">
+            Résumé/CV <FontAwesomeIcon icon={faFile} />
+          </button>
+        </a>
 
         <button className="about__sayhello">
           Say Hello

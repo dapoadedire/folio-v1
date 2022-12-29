@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-const ContactUs = () => {
+const ContactMe = () => {
   const form = useRef();
   const [status, setStatus] = useState(null);
 
@@ -77,7 +77,7 @@ const ContactForm = () => {
         I am currently looking for a full-time position as a Frontend Developer.
         If you have a position available, please reach out to me.
       </p>
-      <ContactUs />
+      <ContactMe />
     </section>
   );
 };

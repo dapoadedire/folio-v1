@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
 #root {
-  max-width: 1140px;
+  max-width: 1220px;
   margin: 0 auto;
   width: 90%;
 }
@@ -102,7 +102,12 @@ img {
   padding: 0.5rem 0;
   border-bottom: 3px solid black;
 }
-
+.resume{
+  width: 100%;
+  background-color: white !important;
+  color: black !important;
+  border: 2px solid black !important;
+}
 .about__container .about__content p {
   font-size: 1.2rem;
   line-height: 1.5;
@@ -176,14 +181,6 @@ img {
   transition: all 0.2s ease;
 }
 
-.project__image {
-  opacity: 0.9;
-  transition: all 0.3s ease-in-out;
-}
-
-.project__image img {
-  border-radius: 5px;
-}
 
 .project__image:hover {
   opacity: 1;
@@ -259,7 +256,7 @@ img {
 
 .contact-form form textarea {
   width: 100% !important;
-  height: 10rem;
+  height: 15rem;
   margin-bottom: 1rem;
   padding: 0.5rem;
   font-size: 1.2rem;
@@ -316,6 +313,7 @@ footer {
   align-items: center;
   border-top: 1px solid rgba(0, 0, 0, 0.233);
   min-height: 80px;
+  font-size: 1.5rem;
 }
 
 footer p a {
