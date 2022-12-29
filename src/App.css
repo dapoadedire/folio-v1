@@ -9,8 +9,11 @@ button{
 #root {
   max-width: 1220px;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
+  /* padding: 0 1rem; */
 }
+
+
 
 html {
   scroll-behavior: smooth;
@@ -20,6 +23,7 @@ html {
 body {
   font-family: "Space Mono", monospace;
   background: #ffffff;
+  
 }
 
 
@@ -33,6 +37,8 @@ header {
   top: 0;
   background: white;
   z-index: 100;
+  padding: 0 1rem;
+  
 }
 
 
@@ -58,7 +64,9 @@ html[data-theme="dark"] header nav ul li a {
   color: white;
 }
 
-
+main{
+  padding: 0 1rem;
+}
 
 header h2 a {
   text-decoration: none;
@@ -100,10 +108,11 @@ header nav ul li a {
   text-decoration: none;
   color: black;
   font-size: 1.2rem;
+  opacity: 0.8;
 }
 
 header nav ul li a:hover {
-  opacity: 0.8;
+  opacity: 1;
   text-decoration: underline;
 }
 
@@ -174,6 +183,7 @@ html[data-theme="dark"] .about__container .about__content h2 {
   color: white;
   transition: all 0.3s ease-in-out;
   border-radius: 5px;
+   opacity: 0.8;
 }
 
 html[data-theme="dark"] button{
@@ -181,7 +191,7 @@ html[data-theme="dark"] button{
 }
 
 .about__content button:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .about__content button span {
@@ -373,17 +383,21 @@ html[data-theme="dark"] .contact-form h2 {
   margin-bottom: 0.5rem;
   padding: 0.5rem;
   font-size: 1.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  background: black;
-  color: white;
+  border: 1px solid rgb(0, 0, 0);
+  background: white;
+  color: black;
   margin-bottom: 2rem;
+  transition: all 0.2s ease;
 }
 
 .contact-form form button:hover {
-  opacity: 0.8;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  background: black;
+  color: white;
 }
 
 footer {
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
