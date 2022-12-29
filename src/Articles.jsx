@@ -23,7 +23,7 @@ const Articles = () => {
       <h2 className="articles__title">Articles</h2>
       <p className="articles__subtitle">
         Here are some of my articles. You can find more on my{" "}
-        <a href="https://www.dapoadedire.hashnode.dev/">Hashnode Blog.</a>
+        <a href="https://www.dapoadedire.hashnode.dev/" target="_blank" rel="noreferrer">Hashnode Blog.</a>
       </p>
 
       <div className="articles__content">
@@ -31,7 +31,7 @@ const Articles = () => {
           const { title, link } = article;
           return (
             <div className="articles__card" key={title}>
-              <a href={link} className="articles__link">
+              <a href={link} className="articles__link" target="_blank" rel="noreferrer">
                 <h3 className="articles__name">{title}</h3>
               </a>
             </div>
