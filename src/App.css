@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
+
+
+button{
+  cursor: pointer;
+}
+
 #root {
   max-width: 1220px;
   margin: 0 auto;
@@ -13,7 +19,9 @@ html {
 
 body {
   font-family: "Space Mono", monospace;
+  background: #ffffff;
 }
+
 
 header {
   display: flex;
@@ -25,20 +33,57 @@ header {
   top: 0;
   background: white;
   z-index: 100;
-
-  /* Glassmorphism stuff */
-  /* From https://css.glass */
-  /* background: rgba(255, 255, 255, 0);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(4.1px);
--webkit-backdrop-filter: blur(4.1px);
-border: 1px solid rgba(255, 255, 255, 0.26); */
 }
+
+
+
+html[data-theme="dark"] body {
+  background: #000000;
+  color: white !important;
+}
+
+
+html[data-theme="dark"] header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.233);
+  background-color: #000000;
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] h2 a{
+  color: #ffffff;
+}
+
+
+html[data-theme="dark"] header nav ul li a {
+  color: white;
+}
+
+
+
 header h2 a {
   text-decoration: none;
   color: black;
   font-size: 2rem;
   font-weight: 700;
+}
+
+
+header .toggle{
+  width: 30px;
+  height: 30px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+
+
+html[data-theme="dark"] header .toggle-theme svg{
+  color: white;
+}
+
+header nav{
+  display: flex;
+  align-items: center;
 }
 
 header nav ul {
@@ -102,6 +147,11 @@ img {
   padding: 0.5rem 0;
   border-bottom: 3px solid black;
 }
+
+html[data-theme="dark"] .about__container .about__content h2 {
+  border-bottom: 3px solid white !important;
+}
+
 .resume{
   width: 100%;
   background-color: white !important;
@@ -114,6 +164,7 @@ img {
   flex-grow: 1;
 }
 
+
 .about__content button {
   margin-top: 1rem;
   padding: 0.8rem 1rem;
@@ -123,6 +174,10 @@ img {
   color: white;
   transition: all 0.3s ease-in-out;
   border-radius: 5px;
+}
+
+html[data-theme="dark"] button{
+  border: 2px solid white !important;
 }
 
 .about__content button:hover {
@@ -173,10 +228,22 @@ img {
   transition: all 0.2s ease;
 }
 
+html[data-theme="dark"] .project__card {
+  border: 1px solid rgba(255, 255, 255, 0.233);
+}
+
 .project__card:hover {
   box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
   -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+  transform: matrix(1, 0, 0, 1, -6, -6);
+  transition: all 0.2s ease;
+}
+
+html[data-theme="dark"] .project__card:hover {
+  box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 1);
   transform: matrix(1, 0, 0, 1, -6, -6);
   transition: all 0.2s ease;
 }
@@ -225,6 +292,11 @@ img {
   margin-right: 1rem;
 }
 
+html[data-theme="dark"] .github__link,
+html[data-theme="dark"] .live__link {
+  color: white;
+}
+
 .contact-form {
   margin: 4rem 0;
 }
@@ -234,6 +306,10 @@ img {
   margin-bottom: 1rem;
   padding: 0.5rem 0;
   border-bottom: 3px solid black;
+}
+
+html[data-theme="dark"] .contact-form h2 {
+  border-bottom: 3px solid white !important;
 }
 
 .contact-form p {
@@ -316,8 +392,18 @@ footer {
   font-size: 1.5rem;
 }
 
+html[data-theme="dark"] footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.233);
+  color: white;
+}
+
+
 footer p a {
   color: black;
+}
+
+html[data-theme="dark"] footer p a {
+  color: white;
 }
 
 footer ul {
@@ -335,6 +421,10 @@ footer ul li a {
   color: black;
 }
 
+html[data-theme="dark"] footer ul li a {
+  color: white;
+}
+
 .italic {
   font-style: italic;
 }
@@ -348,6 +438,10 @@ footer ul li a {
   margin-bottom: 1rem;
   padding: 0.5rem 0;
   border-bottom: 3px solid black;
+}
+
+html[data-theme="dark"] .skills__container h2 {
+  border-bottom: 3px solid white;
 }
 
 .skills__container p {
@@ -374,12 +468,22 @@ footer ul li a {
   border-radius: 5px;
 }
 
+html[data-theme="dark"] .skill {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .skill:hover {
   box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
   -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
   transform: matrix(1, 0, 0, 1, -6, -6);
   transition: all 0.2s ease;
+}
+
+html[data-theme="dark"] .skill:hover {
+  box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 1);
 }
 
 .skill p {
@@ -419,13 +523,22 @@ footer ul li a {
   border-bottom: 3px solid black;
 }
 
+html[data-theme="dark"] .articles__container h2 {
+  border-bottom: 3px solid white;
+}
 .articles__container p {
   font-size: 1.2rem;
   line-height: 1.5;
 }
 
+
+
 .articles__container p a {
   color: black;
+}
+
+html[data-theme="dark"] .articles__container p a {
+  color: white;
 }
 
 .articles__card {
@@ -437,6 +550,10 @@ footer ul li a {
   text-decoration: none;
   color: black;
   transition: all 0.2s ease;
+}
+
+html[data-theme="dark"] .articles__card a {
+  color: white;
 }
 
 .articles__card a:hover {
@@ -462,15 +579,13 @@ footer ul li a {
     font-size: 1rem;
   }
 
-  header {
-    flex-direction: column;
-  }
 
   
 }
 
 @media screen and (max-width: 600px) {
-  nav{
+  header nav ul{
     display: none;
+    border: 1px solid green;
   }
 }
