@@ -10,7 +10,7 @@ const year = new Date().getFullYear();
 const socialLinks = {
   linkedin: "https://www.linkedin.com/in/dapoadedire/",
   github: "https://www.github.com/dapoadedire",
-  twitter: "https://www.twitter.com/dapoa_dedire",
+  twitter: "https://www.twitter.com/dapo_adedire",
 };
 const Footer = () => {
   return (

@@ -9,7 +9,7 @@ const articles_list = [
   },
   {
     title: "Best Articles I've Read This Year.",
-    link: "https://www.dapoadedire.tech/blog/my-best-articles-of-the-year.",
+    link: "https://www.dapoadedire.tech/blog/my-best-articles-of-the-year/",
   },
   {
     title: "How To Add A Custom Rich Text-Editor In Your Django Website.",
