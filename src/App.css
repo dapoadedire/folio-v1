@@ -240,17 +240,17 @@ html[data-theme="dark"] .project__card {
 }
 
 .project__card:hover {
-  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
-  -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 5px 5px 0px 0px var(--dark-color);
+  -webkit-box-shadow: 5px 5px 0px 0px var(--dark-color);
+  -moz-box-shadow: 5px 5px 0px 0px var(--dark-color);
   transform: matrix(1, 0, 0, 1, -6, -6);
   transition: all 0.2s ease;
 }
 
 html[data-theme="dark"] .project__card:hover {
-  box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 1);
-  -webkit-box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 1);
-  -moz-box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 1);
+  box-shadow: 5px 5px 0px 0px var(--light-color);
+  -webkit-box-shadow: 5px 5px 0px 0px var(--light-color);
+  -moz-box-shadow: 5px 5px 0px 0px var(--light-color);
   transform: matrix(1, 0, 0, 1, -6, -6);
   transition: all 0.2s ease;
 }
@@ -473,9 +473,9 @@ html[data-theme="dark"] .skill {
 }
 
 .skill:hover {
-  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
-  -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 5px 5px 0px 0px var(--dark-color);
+  -webkit-box-shadow: 5px 5px 0px 0px var(--dark-color);
+  -moz-box-shadow: 5px 5px 0px 0px var(--dark-color);
   transform: matrix(1, 0, 0, 1, -6, -6);
   transition: all 0.2s ease;
 }
