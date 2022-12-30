@@ -9,12 +9,12 @@ const articles_list = [
   },
   {
     title: "Best Articles I've Read This Year.",
-    link: "https://www.dapoadedire.tech/blog/my-best-articles-of-the-year."
+    link: "https://www.dapoadedire.tech/blog/my-best-articles-of-the-year.",
   },
   {
     title: "How To Add A Custom Rich Text-Editor In Your Django Website.",
-    link: "https://dapoadedire.hashnode.dev/how-to-add-a-custom-rich-text-editor-in-your-django-website"
-  }
+    link: "https://dapoadedire.hashnode.dev/how-to-add-a-custom-rich-text-editor-in-your-django-website",
+  },
 ];
 
 const Articles = () => {
@@ -23,7 +23,13 @@ const Articles = () => {
       <h2 className="articles__title">Articles</h2>
       <p className="articles__subtitle">
         Here are some of my articles. You can find more on my{" "}
-        <a href="https://www.dapoadedire.hashnode.dev/" target="_blank" rel="noreferrer">Hashnode Blog.</a>
+        <a
+          href="https://www.dapoadedire.hashnode.dev/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Hashnode Blog.
+        </a>
       </p>
 
       <div className="articles__content">
@@ -31,7 +37,12 @@ const Articles = () => {
           const { title, link } = article;
           return (
             <div className="articles__card" key={title}>
-              <a href={link} className="articles__link" target="_blank" rel="noreferrer">
+              <a
+                href={link}
+                className="articles__link"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <h3 className="articles__name">{title}</h3>
               </a>
             </div>

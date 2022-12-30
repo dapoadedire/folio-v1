@@ -31,7 +31,7 @@ const ContactMe = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail} id="contact">
-      <label htmlFor="name">Name</label>
+      <label htmlFor="name">Name:</label>
       <input type="text" name="user_name" placeholder="John Doe" />
       <label htmlFor="email">Email:</label>
       <input
@@ -74,8 +74,12 @@ const ContactForm = () => {
     <section className="contact-form">
       <h2>Contact Me</h2>
       <p>
-        I am currently looking for a full-time position as a Frontend Developer.
-        If you have a position available, please reach out to me.
+        I am seeking opportunities to contribute my skills and knowledge through
+        an internship or collaboration on projects. I am open to full-time or
+        part-time positions and am eager to learn and grow in my field. If you
+        have an available internship or project that aligns with my interests
+        and skills, I would love the opportunity to be considered. Please don&apost
+        hesitate to reach out to me to discuss further
       </p>
       <ContactMe />
     </section>
