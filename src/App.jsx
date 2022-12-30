@@ -4,8 +4,6 @@ import Section from "./Section";
 import Footer from "./Footer";
 import "normalize.css/normalize.css";
 
-
-
 // import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 
 function App() {

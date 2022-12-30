@@ -73,18 +73,14 @@ const Project = () => {
 
       <div className="project__content">
         {all_projects.map((project) => {
-          const { id, name, description, link, github, languages } =
-            project;
+          const { id, name, description, link, github, languages } = project;
           return (
             <div className="project__card" key={id}>
-             
-
               <div className="project__description">
                 <h3 className="project__name">{name}</h3>
                 <p className="project__text">{description}</p>
               </div>
               <div className="project__others">
-
                 <div className="project__links">
                   <a href={link} className="live__link">
                     <FontAwesomeIcon icon={faLink} />
@@ -104,7 +100,6 @@ const Project = () => {
                   })}
                 </div>
               </div>
-              
             </div>
           );
         })}
