@@ -78,8 +78,8 @@ const ContactForm = () => {
         an internship or collaboration on projects. I am open to full-time or
         part-time positions and am eager to learn and grow in my field. If you
         have an available internship or project that aligns with my interests
-        and skills, I would love the opportunity to be considered. Please don&apost
-        hesitate to reach out to me to discuss further
+        and skills, I would love the opportunity to be considered. Please don&apos;t
+        hesitate to reach out to me to discuss further.
       </p>
       <ContactMe />
     </section>
