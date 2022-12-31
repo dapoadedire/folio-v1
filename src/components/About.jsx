@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import profile from "./assets/profile-photo.jpeg";
+import profile from "../assets/profile-photo.jpeg";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
-import resume from "./assets/___dapoadedire.pdf";
+import resume from "../assets/___dapoadedire.pdf";
 import { faFile } from "@fortawesome/free-regular-svg-icons";
 
 const About = () => {
