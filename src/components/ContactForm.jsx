@@ -1,6 +1,13 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
+
+
+const YOUR_SERVICE_ID = import.meta.env.REACT_APP_YOUR_SERVICE_ID;
+const YOUR_TEMPLATE_ID = import.meta.env.REACT_APP_YOUR_TEMPLATE_ID;
+const YOUR_PUBLIC_KEY = import.meta.env.REACT_APP_YOUR_PUBLIC_KEY;
+
+
 const ContactMe = () => {
   const form = useRef();
   const [status, setStatus] = useState(null);
@@ -11,10 +18,10 @@ const ContactMe = () => {
 
     emailjs
       .sendForm(
-        "service_z6s5h4f",
-        "template_cgb56wq",
+        YOUR_SERVICE_ID,
+        YOUR_TEMPLATE_ID,
         form.current,
-        "Mq5w6naUb3HofLTYE"
+        YOUR_PUBLIC_KEY
       )
       .then(
         (result) => {
