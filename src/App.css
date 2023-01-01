@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
-
 :root {
-  --light-color: #f9f9f9;
-  --dark-color:  #191f15;
+  --light-color: rgb(243, 240, 240);
+  --dark-color: #191919;
+  --text-secondary: #8e8e8e;
+  --text-primary: #f1f2f3;
 }
 
 button {
@@ -36,14 +37,14 @@ header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.233);
   position: sticky;
   top: 0;
-  background:var(--light-color);
+  background: var(--light-color);
   z-index: 100;
   padding: 0 1rem;
 }
 
 html[data-theme="dark"] body {
   background: var(--dark-color);
-  color:var(--light-color) !important;
+  color: var(--light-color);
 }
 
 html[data-theme="dark"] header {
@@ -57,7 +58,7 @@ html[data-theme="dark"] h2 a {
 }
 
 html[data-theme="dark"] header nav ul li a {
-  color:var(--light-color);
+  color: var(--light-color);
 }
 
 main {
@@ -79,7 +80,7 @@ header .toggle {
 }
 
 html[data-theme="dark"] header .toggle-theme svg {
-  color:var(--light-color);
+  color: var(--light-color);
 }
 
 header nav {
@@ -101,11 +102,10 @@ header nav ul li a {
   text-decoration: none;
   color: var(--dark-color);
   font-size: 1.2rem;
-  opacity: 0.8;
+  font-weight: 500;
 }
 
 header nav ul li a:hover {
-  opacity: 1;
   text-decoration: underline;
 }
 
@@ -118,7 +118,6 @@ img {
 .about__container {
   margin-top: 2rem;
   display: grid;
-  /* grid-template-columns: 1fr 1fr ; */
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 2rem;
 }
@@ -143,14 +142,16 @@ img {
   /* align-items: center; */
 }
 
-.about__container .about__content h2, .project__container h2 ,.contact-form h2, .skills__container h2,.articles__container h2 {
+.about__container .about__content h2,
+.project__container h2,
+.contact-form h2,
+.skills__container h2,
+.articles__container h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   padding: 0.5rem 0;
   border-bottom: 2px solid var(--dark-color);
 }
-
-
 
 html[data-theme="dark"] .about__container .about__content h2 {
   border-bottom: 2px solid var(--light-color) !important;
@@ -158,7 +159,7 @@ html[data-theme="dark"] .about__container .about__content h2 {
 
 .resume {
   width: 100%;
-  background-color:var(--light-color) !important;
+  background-color: var(--light-color) !important;
   color: var(--dark-color) !important;
   border: 2px solid var(--dark-color) !important;
 }
@@ -174,7 +175,7 @@ html[data-theme="dark"] .about__container .about__content h2 {
   font-size: 1.5rem;
   border: 2px solid var(--light-color);
   background: var(--dark-color);
-  color:var(--light-color);
+  color: var(--light-color);
   transition: all 0.3s ease-in-out;
   border-radius: 5px;
   opacity: 0.8;
@@ -196,8 +197,6 @@ html[data-theme="dark"] button {
   margin-top: 2rem;
 }
 
-
-
 .project__container p {
   font-size: 1.2rem;
   line-height: 1.5;
@@ -212,7 +211,7 @@ html[data-theme="dark"] .project__container h2 {
 }
 
 html[data-theme="dark"] .project__container p a {
-  color:var(--light-color);
+  color: var(--light-color);
 }
 
 .project__content {
@@ -299,14 +298,12 @@ html[data-theme="dark"] .project__card:hover {
 
 html[data-theme="dark"] .github__link,
 html[data-theme="dark"] .live__link {
-  color:var(--light-color);
+  color: var(--light-color);
 }
 
 .contact-form {
   margin: 4rem 0;
 }
-
-
 
 html[data-theme="dark"] .contact-form h2 {
   border-bottom: 2px solid var(--light-color) !important;
@@ -375,7 +372,7 @@ html[data-theme="dark"] .contact-form h2 {
   padding: 0.5rem;
   font-size: 1.5rem;
   border: 2px solid var(--dark-color);
-  background:var(--light-color);
+  background: var(--light-color);
   color: var(--dark-color);
   margin-bottom: 2rem;
   transition: all 0.2s ease;
@@ -384,7 +381,7 @@ html[data-theme="dark"] .contact-form h2 {
 .contact-form form button:hover {
   border: 2px solid var(--light-color);
   background: var(--dark-color);
-  color:var(--light-color);
+  color: var(--light-color);
 }
 
 footer {
@@ -399,7 +396,7 @@ footer {
 
 html[data-theme="dark"] footer {
   border-top: 1px solid rgba(255, 255, 255, 0.233);
-  color:var(--light-color);
+  color: var(--light-color);
 }
 
 footer p a {
@@ -407,7 +404,7 @@ footer p a {
 }
 
 html[data-theme="dark"] footer p a {
-  color:var(--light-color);
+  color: var(--light-color);
 }
 
 footer ul {
@@ -426,7 +423,7 @@ footer ul li a {
 }
 
 html[data-theme="dark"] footer ul li a {
-  color:var(--light-color);
+  color: var(--light-color);
 }
 
 .italic {
@@ -438,7 +435,6 @@ html[data-theme="dark"] footer ul li a {
 .skills__container {
   margin: 4em 0;
 }
-
 
 html[data-theme="dark"] .skills__container h2 {
   border-bottom: 2px solid var(--light-color);
@@ -516,8 +512,6 @@ html[data-theme="dark"] .skill:hover {
   margin: 2rem 0;
 }
 
- 
-
 html[data-theme="dark"] .articles__container h2 {
   border-bottom: 2px solid var(--light-color);
 }
@@ -531,7 +525,7 @@ html[data-theme="dark"] .articles__container h2 {
 }
 
 html[data-theme="dark"] .articles__container p a {
-  color:var(--light-color);
+  color: var(--light-color);
 }
 
 .articles__card {
@@ -546,7 +540,7 @@ html[data-theme="dark"] .articles__container p a {
 }
 
 html[data-theme="dark"] .articles__card a {
-  color:var(--light-color);
+  color: var(--light-color);
 }
 
 .articles__card a:hover {

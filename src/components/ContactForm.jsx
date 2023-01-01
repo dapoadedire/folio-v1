@@ -1,12 +1,9 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-
-
 const YOUR_SERVICE_ID = import.meta.env.VITE_YOUR_SERVICE_ID;
 const YOUR_TEMPLATE_ID = import.meta.env.VITE_YOUR_TEMPLATE_ID;
 const YOUR_PUBLIC_KEY = import.meta.env.VITE_YOUR_PUBLIC_KEY;
-
 
 const ContactMe = () => {
   const form = useRef();
@@ -39,7 +36,7 @@ const ContactMe = () => {
   return (
     <form ref={form} onSubmit={sendEmail} id="contact">
       <label htmlFor="name">Name:</label>
-      <input type="text" name="user_name" placeholder="John Doe" />
+      <input type="text" name="user_name" placeholder="John Doe" aria-label="Enter your name" />
       <label htmlFor="email">Email:</label>
       <input
         id="email"
@@ -85,8 +82,8 @@ const ContactForm = () => {
         an internship or collaboration on projects. I am open to full-time or
         part-time positions and am eager to learn and grow in my field. If you
         have an available internship or project that aligns with my interests
-        and skills, I would love the opportunity to be considered. Please don&apos;t
-        hesitate to reach out to me to discuss further.
+        and skills, I would love the opportunity to be considered. Please
+        don&apos;t hesitate to reach out to me to discuss further.
       </p>
       <ContactMe />
     </section>

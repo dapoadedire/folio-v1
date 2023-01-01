@@ -11,19 +11,14 @@ const About = () => {
       <div className="about__content">
         <h2 className="about__title">About Me</h2>
         <p className="about__text">
-          As an electronics/electrical engineering student and software
-          developer with over <Italics>two years</Italics> of experience, I have
-          a strong foundation in both technical and practical skills. I am
-          constantly seeking to learn and improve, and have a particular
-          interest in psychology, non-fiction books, and exploring new
-          technologies. In addition to my work as a{" "}
-          <Italics> back-end developer with some front-end experience</Italics>,
-          I enjoy writing <Italics>technical articles</Italics> and contributing
-          to
-          <Italics>open source software projects.</Italics> In my free time, I
-          enjoy gardening and taking photos as hobbies. Overall, I am a curious
-          and dedicated individual who is always looking for new ways to grow
-          and expand my knowledge and skills.
+          I am an electronics/electrical engineering student and software developer with
+          strong technical and practical skills. I am eager to learn and
+          improve, and have a particular interest in exploring new technologies.
+          In addition to being a a back-end developer with some front-end
+          experience, I enjoy writing <Italics text="technical articles" /> and contributing to 
+          <Italics text=" open source software projects."/> In my free time, I enjoy gardening and
+          taking photos. I am a curious and dedicated individual who is always
+          looking for new ways to grow and expand my knowledge and skills.
         </p>
         <a href={resume} target="_blank" rel="noreferrer">
           <button className="resume">
@@ -45,8 +40,9 @@ const About = () => {
   );
 };
 
-const Italics = ({ children }) => (
-  <span className="italic text-gray-500">{children}</span>
+const Italics = ({ text }) => (
+  <span style={{ fontStyle: "italic" }}>{text}</span>
 );
+
 
 export default About;
