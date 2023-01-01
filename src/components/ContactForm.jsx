@@ -3,9 +3,9 @@ import emailjs from "@emailjs/browser";
 
 
 
-const YOUR_SERVICE_ID = import.meta.env.YOUR_SERVICE_ID;
-const YOUR_TEMPLATE_ID = import.meta.env.YOUR_TEMPLATE_ID;
-const YOUR_PUBLIC_KEY = import.meta.env.YOUR_PUBLIC_KEY;
+const YOUR_SERVICE_ID = import.meta.env.VITE_YOUR_SERVICE_ID;
+const YOUR_TEMPLATE_ID = import.meta.env.VITE_YOUR_TEMPLATE_ID;
+const YOUR_PUBLIC_KEY = import.meta.env.VITE_YOUR_PUBLIC_KEY;
 
 
 const ContactMe = () => {
