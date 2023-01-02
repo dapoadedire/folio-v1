@@ -17,23 +17,23 @@ const Footer = () => {
     <footer>
       <p>
         <FontAwesomeIcon icon={faCopyright} /> {year} -
-        <a href="https://www.google.com/search?q=dapo+adedire&oq=dapo+adedire">
+        <a href="https://www.google.com/search?q=dapo+adedire&oq=dapo+adedire" target="_blank" rel="noreferrer">
           Built by Dapo Adedire
         </a>
       </p>
       <ul className="social-links">
         <li>
-          <a href={socialLinks.linkedin}>
+          <a href={socialLinks.linkedin} target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
         </li>
         <li>
-          <a href={socialLinks.github}>
+          <a href={socialLinks.github} target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
         <li>
-          <a href={socialLinks.twitter}>
+          <a href={socialLinks.twitter} target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
         </li>
