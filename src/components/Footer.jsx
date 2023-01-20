@@ -1,4 +1,3 @@
-// Import brand icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
