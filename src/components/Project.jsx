@@ -16,7 +16,8 @@ const all_projects = _.shuffle([
   {
     id: nanoid(),
     name: "BooksExplorer",
-    description: "A React-based application that allows users to search for books and view book details.",
+    description:
+      "A React-based application that allows users to search for books and view book details.",
     link: "https://booksexplorerl.vercel.app/",
     github: "https://github.com/dapoadedire/booksexplorer",
     languages: ["React", "Vanilla CSS"],
@@ -24,7 +25,8 @@ const all_projects = _.shuffle([
   {
     id: nanoid(),
     name: "Jokes World",
-    description: "A simple accordion-style app that displays a list of jokes, allowing the user to expand and collapse the answers",
+    description:
+      "A simple accordion-style app that displays a list of jokes, allowing the user to expand and collapse the answers",
     link: "https://jokes-world.vercel.app/",
     github: "https://github.com/dapoadedire/jokes-world",
     languages: ["React", "Tailwind CSS"],
@@ -32,7 +34,8 @@ const all_projects = _.shuffle([
   {
     id: nanoid(),
     name: "NASA APOD",
-    description: "This is a simple app that allows users to search and view the NASA Astronomy Picture of the Day (APOD). Users can also generate a random APOD.",
+    description:
+      "This is a simple app that allows users to search and view the NASA Astronomy Picture of the Day (APOD). Users can also generate a random APOD.",
     link: "https://astro-pic-of-the-day.vercel.app/",
     github: "https://github.com/dapoadedire/astro-pic-of-the-day",
     languages: ["React", "Vanilla CSS"],
@@ -40,7 +43,8 @@ const all_projects = _.shuffle([
   {
     id: nanoid(),
     name: "BrainBusters",
-    description: "BrainBusters is a React-based Quiz application that allows users to answer questions, track their score, and view their results at the end of the quiz.",
+    description:
+      "BrainBusters is a React-based Quiz application that allows users to answer questions, track their score, and view their results at the end of the quiz.",
     link: "https://brainbusters.vercel.app/",
     github: "https://github.com/dapoadedire/brainbusters",
     languages: ["React", "Tailwind CSS"],
@@ -48,7 +52,8 @@ const all_projects = _.shuffle([
   {
     id: nanoid(),
     name: "TaskMaster",
-    description: "TaskMaster is a to-do list application built with React. It allows users to add, mark as done, delete, move up and down tasks. The tasks are also stored in local storage so that they persist even after the browser is closed.",
+    description:
+      "TaskMaster is a to-do list application built with React. It allows users to add, mark as done, delete, move up and down tasks. The tasks are also stored in local storage so that they persist even after the browser is closed.",
     link: "https://taskmaster-15.vercel.app/",
     github: "https://github.com/dapoadedire/taskmaster",
     languages: ["React", "Tailwind CSS"],
