@@ -4,6 +4,7 @@ const skills = [
   "JavaScript (ES6+)",
   "ReactJS",
   "Python",
+  "Tailwind CSS",
   "Django",
   "Git & GitHub",
   "Responsive Design",

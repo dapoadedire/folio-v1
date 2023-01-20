@@ -15,6 +15,10 @@ const articles_list = [
     title: "How To Add A Custom Rich Text-Editor In Your Django Website.",
     link: "https://dapoadedire.hashnode.dev/how-to-add-a-custom-rich-text-editor-in-your-django-website",
   },
+  {
+    title: "Setting Up EmailJS With A React App.",
+    link: "https://dapoadedire.hashnode.dev/setting-up-emailjs-with-a-react-app",
+  }
 ];
 
 const Articles = () => {
