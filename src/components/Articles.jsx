@@ -18,7 +18,7 @@ const articles_list = [
   {
     title: "Setting Up EmailJS With A React App.",
     link: "https://dapoadedire.hashnode.dev/setting-up-emailjs-with-a-react-app",
-  }
+  },
 ];
 
 const Articles = () => {
