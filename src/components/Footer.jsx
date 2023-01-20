@@ -16,7 +16,11 @@ const Footer = () => {
     <footer>
       <p>
         <FontAwesomeIcon icon={faCopyright} /> {year} -
-        <a href="https://www.google.com/search?q=dapo+adedire&oq=dapo+adedire" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.google.com/search?q=dapo+adedire&oq=dapo+adedire"
+          target="_blank"
+          rel="noreferrer"
+        >
           Built by Dapo Adedire
         </a>
       </p>
