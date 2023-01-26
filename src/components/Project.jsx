@@ -17,7 +17,7 @@ const all_projects = _.shuffle([
     id: nanoid(),
     name: "BooksExplorer",
     description: "A React-based application that allows users to search for books and view book details.",
-    link: "https://booksexplorerl.vercel.app/",
+    link: "https://booksexplorer.vercel.app/",
     github: "https://github.com/dapoadedire/booksexplorer",
     languages: ["React", "Vanilla CSS"],
   },
