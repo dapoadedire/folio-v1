@@ -14,9 +14,8 @@ const About = () => {
           I am an electronics/electrical engineering student and software developer with
           strong technical and practical skills. I am eager to learn and
           improve, and have a particular interest in exploring new technologies.
-          In addition to being a a front-end developer, I enjoy writing <Italics text="technical articles" /> and contributing to 
-          <Italics text=" open source software projects."/> In my free time, I enjoy gardening and
-          taking photos. I am a curious and dedicated individual who is always
+          In addition to being a front-end developer, I enjoy writing <Italics text="technical articles" /> and contributing to 
+          <Italics text=" open-source software projects."/> I am a curious and dedicated individual who is always
           looking for new ways to grow and expand my knowledge and skills.
         </p>
         <a href={resume} target="_blank" rel="noreferrer">
