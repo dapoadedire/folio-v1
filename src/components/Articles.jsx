@@ -2,7 +2,7 @@ const articles_list = [
   {
     title: "Creating a .gitignore file with a Python Package.",
     link: "https://dapoadedire.hashnode.dev/creating-a-gitignore-file-with-a-python-package",
-  },
+  },  
   {
     title: "How to Convert Images to PDF in Python.",
     link: "https://dapoadedire.hashnode.dev/how-to-convert-images-to-pdf-in-python/",

@@ -53,59 +53,15 @@ const all_projects = _.shuffle([
     github: "https://github.com/dapoadedire/taskmaster",
     languages: ["React", "Tailwind CSS"],
   },
+  
   {
     id: nanoid(),
-    name: "Django Blog v2",
-    description:
-      "Blog application that allows users to leave comments on posts. This functionality enables readers to engage with the content and contribute their own thoughts and perspectives.",
-    link: "https://github.com/dapoadedire/django-blog-v2",
-    github: "https://github.com/dapoadedire/django-blog-v2",
-    languages: ["HTML,", "CSS,", "JavaScript,", "Django"],
-  },
-  {
-    id: 2,
     name: "GitIgnore CLI",
     description:
       "Python package that generates a .gitignore file for different programming languages. With this package, you can quickly and easily create a .gitignore file that will help you manage your Git repository by ignoring files that you don't want to track.",
     link: "https://pypi.org/project/creategitignore/",
     github: "https://github.com/dapoadedire/gitignore-cli",
     languages: ["Python,", "PyPI"],
-  },
-  {
-    id: 3,
-    name: "Yoruba Proverb API 🚧",
-    description:
-      " REST API that generates Yoruba proverbs, their translations, and the wisdom contained in them. This API allows users to easily access and learn from these traditional African sayings.",
-    link: "https://github.com/dapoadedire/yoruba-proverb-api",
-    github: "https://github.com/dapoadedire/yoruba-proverb-api",
-    languages: ["HTML,", "CSS,", "JavaScript"],
-  },
-  {
-    id: 4,
-    name: "Cozy Library 🚧",
-    description:
-      "Cozy Library is a website that allows users to download books of various genres, offering a wide selection of literature to choose from. Whether you're looking for a classic novel, a contemporary best-seller, or a non-fiction title, Cozy Library has something for everyone.",
-    link: "https://github.com/dapoadedire/cozylibrary",
-    github: "https://github.com/dapoadedire/cozylibrary",
-    languages: ["HTML,", "CSS,", "JavaScript"],
-  },
-  {
-    id: 5,
-    name: "Todo List API",
-    description:
-      "API for a todo list application that can perform all the basic functions of a todo app, such as creating, retrieving, updating, and deleting todo items. This API allows users to manage and organize their tasks in a convenient and efficient manner.",
-    link: "https://github.com/dapoadedire/django-todolistapi",
-    github: "https://github.com/dapoadedire/django-todolistapi",
-    languages: ["Django,", "Django REST Framework"],
-  },
-  {
-    id: 6,
-    name: "Gab Scrapper",
-    description:
-      "Python script that scrapes user and post data from the social media platform Gab and writes the data to a CSV file.",
-    link: "https://github.com/dapoadedire/gab-scraper",
-    github: "https://github.com/dapoadedire/gab-scraper",
-    languages: ["Python"],
   },
 ]);
 
