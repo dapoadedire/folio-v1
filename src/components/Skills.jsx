@@ -3,13 +3,29 @@ const skills = [
   "CSS3",
   "JavaScript (ES6+)",
   "ReactJS",
-  "Python",
   "Tailwind CSS",
-  "Django",
   "Git & GitHub",
   "Responsive Design",
   "Web Accessibility",
 ];
+
+
+// I'll add these sooon.
+
+// Redux
+// React
+// Next.js
+// Gatsby
+// SASS / SCSS
+// TypeScript
+// Node.js
+// RESTful APIs
+// AJAX
+// GraphQL
+// Jest / Mocha / Chai(for testing)
+//   UI / UX Design principles
+// Agile / Scrum methodologies
+// Cross - browser compatibility and debugging.
 
 const Skills = () => {
   return (
