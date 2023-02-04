@@ -71,7 +71,7 @@ const Project = () => {
       <h2 className="project__title">Projects</h2>
       <p className="project__subtitle">
         Here are some of my projects. You can find more on my{" "}
-        <a href="https://www.github.com/dapoadedire">Github Profile.</a>
+        <a href="https://www.github.com/dapoadedire" target="_blank" rel="noreferrer">Github Profile.</a>
       </p>
 
       <div className="project__content">
@@ -85,10 +85,10 @@ const Project = () => {
               </div>
               <div className="project__others">
                 <div className="project__links">
-                  <a href={link} className="live__link">
+                  <a href={link} className="live__link" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faLink} />
                   </a>
-                  <a href={github} className="github__link">
+                  <a href={github} className="github__link" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faGithub} id="github__link" />
                   </a>
                 </div>
