@@ -276,11 +276,13 @@ html[data-theme="dark"] .project__card:hover {
   display: flex;
   align-items: flex-start;
   margin-top: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .project__language {
   opacity: 0.8;
   margin-right: 0.8rem;
+  margin-bottom: .8rem;
 }
 
 .project__links {
@@ -296,6 +298,7 @@ html[data-theme="dark"] .project__card:hover {
   margin-right: 1rem;
 }
 
+
 html[data-theme="dark"] .github__link,
 html[data-theme="dark"] .live__link {
   color: var(--light-color);
@@ -310,7 +313,7 @@ html[data-theme="dark"] .contact-form h2 {
 }
 
 .contact-form p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5;
 }
 
@@ -516,7 +519,7 @@ html[data-theme="dark"] .articles__container h2 {
   border-bottom: 2px solid var(--light-color);
 }
 .articles__container p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5;
 }
 

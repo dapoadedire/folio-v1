@@ -1,36 +1,37 @@
-import { _ } from "lodash";
-import { nanoid } from "nanoid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp} from "@fortawesome/free-solid-svg-icons";
 
-const all_projects = _.shuffle([
-  // {
-  //   id: nanoid(),
-  //   name: "",
-  //   description: "",
-  //   link: "",
-  //   github: "",
-  //   languages: [],
-  // },
+const all_projects = [
   {
-    id: nanoid(),
+    id: 6,
+    name: "Movie/Book Recommender",
+    description: "A React-based application that allows users to input their favorite movies and books and get recommendations based on their input.",
+    link: 'https://movie-and-book-recommender.vercel.app/',
+    github: "https://github.com/dapoadedire/movie-and-book-recommender",
+    languages: ["NextJS", "Typescript", "Tailwind CSS", "OpenAI API"],
+  },
+  {
+    id: 5,
+    name: "Wordsmith",
+    description: "WordSmith is a dictionary application that provides definitions, synonyms, antonyms and examples of English words. It utilizes the API from dictionaryapi.dev.",
+    link: "https://wordsmith-d.vercel.app/",
+    github: "https://github.com/dapoadedire/wordsmith",
+    languages: ["React", "Tailwind CSS"],
+
+  },
+  
+  {
+    id: 4,
     name: "BooksExplorer",
     description: "A React-based application that allows users to search for books and view book details.",
-    link: "https://booksexplorer.vercel.app/",
+    link: "https://bookexplorer.vercel.app/",
     github: "https://github.com/dapoadedire/booksexplorer",
     languages: ["React", "Vanilla CSS"],
   },
+ 
   {
-    id: nanoid(),
-    name: "Jokes World",
-    description: "A simple accordion-style app that displays a list of jokes, allowing the user to expand and collapse the answers",
-    link: "https://jokes-world.vercel.app/",
-    github: "https://github.com/dapoadedire/jokes-world",
-    languages: ["React", "Tailwind CSS"],
-  },
-  {
-    id: nanoid(),
+    id: 3,
     name: "NASA APOD",
     description: "This is a simple app that allows users to search and view the NASA Astronomy Picture of the Day (APOD). Users can also generate a random APOD.",
     link: "https://astro-pic-of-the-day.vercel.app/",
@@ -38,24 +39,16 @@ const all_projects = _.shuffle([
     languages: ["React", "Vanilla CSS"],
   },
   {
-    id: nanoid(),
+    id: 2,
     name: "BrainBusters",
     description: "BrainBusters is a React-based Quiz application that allows users to answer questions, track their score, and view their results at the end of the quiz.",
     link: "https://brainbusters.vercel.app/",
     github: "https://github.com/dapoadedire/brainbusters",
     languages: ["React", "Tailwind CSS"],
   },
+
   {
-    id: nanoid(),
-    name: "TaskMaster",
-    description: "TaskMaster is a to-do list application built with React. It allows users to add, mark as done, delete, move up and down tasks. The tasks are also stored in local storage so that they persist even after the browser is closed.",
-    link: "https://taskmaster-15.vercel.app/",
-    github: "https://github.com/dapoadedire/taskmaster",
-    languages: ["React", "Tailwind CSS"],
-  },
-  
-  {
-    id: nanoid(),
+    id: 0,
     name: "GitIgnore CLI",
     description:
       "Python package that generates a .gitignore file for different programming languages. With this package, you can quickly and easily create a .gitignore file that will help you manage your Git repository by ignoring files that you don't want to track.",
@@ -63,7 +56,7 @@ const all_projects = _.shuffle([
     github: "https://github.com/dapoadedire/gitignore-cli",
     languages: ["Python,", "PyPI"],
   },
-]);
+];
 
 const Project = () => {
   return (
@@ -85,11 +78,21 @@ const Project = () => {
               </div>
               <div className="project__others">
                 <div className="project__links">
-                  <a href={link} className="live__link" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faLink} />
-                  </a>
+                  
                   <a href={github} className="github__link" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faGithub} id="github__link" />
+                  </a>
+                  <a href={link} className="live__link" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faArrowUp}
+                      style={
+                        {
+
+                          transform: "rotate(45deg)",
+                          marginLeft: "0.5rem",
+                          
+                        }
+                      }
+                    />
                   </a>
                 </div>
 
