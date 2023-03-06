@@ -21,7 +21,6 @@ const About = () => {
             Résumé/CV <FontAwesomeIcon icon={faFile} />
           </button>
         </a>
-
         <button className="about__sayhello">
           Say Hello
           <span className="paper-plane">

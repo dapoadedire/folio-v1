@@ -4,6 +4,14 @@ import { faArrowUp} from "@fortawesome/free-solid-svg-icons";
 
 const all_projects = [
   {
+    id: 7,
+    name: "TrendHub",
+    description: "TrendHub is an e-commerce website that allows users to view items in different categories and add them to a cart. The frontend is built with React and TailwindCSS, and additional libraries like React-Icons, Sonner, Hamburger-React, React-Router, Framer Motion, and ESLint are used to enhance the user experience.",
+    link: ' https://trend-hub.vercel.app',
+    github: "https://github.com/dapoadedire/trendhub",
+    languages: ["React","Tailwind CSS"],
+  },
+  {
     id: 6,
     name: "Movie/Book Recommender",
     description: "A React-based application that allows users to input their favorite movies and books and get recommendations based on their input.",
