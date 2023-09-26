@@ -20,6 +20,15 @@ const all_projects = [
     languages: ["NextJS", "Typescript", "Tailwind CSS", "OpenAI API"],
   },
   {
+    id: 0,
+    name: "GitIgnore CLI",
+    description:
+      "Python package that generates a .gitignore file for different programming languages. With this package, you can quickly and easily create a .gitignore file that will help you manage your Git repository by ignoring files that you don't want to track.",
+    link: "https://pypi.org/project/creategitignore/",
+    github: "https://github.com/dapoadedire/gitignore-cli",
+    languages: ["Python,", "PyPI"],
+  },
+  {
     id: 5,
     name: "Wordsmith",
     description: "WordSmith is a dictionary application that provides definitions, synonyms, antonyms and examples of English words. It utilizes the API from dictionaryapi.dev.",
@@ -28,6 +37,7 @@ const all_projects = [
     languages: ["React", "Tailwind CSS"],
 
   },
+  
   
   {
     id: 4,
@@ -38,14 +48,7 @@ const all_projects = [
     languages: ["React", "Vanilla CSS"],
   },
  
-  {
-    id: 3,
-    name: "NASA APOD",
-    description: "This is a simple app that allows users to search and view the NASA Astronomy Picture of the Day (APOD). Users can also generate a random APOD.",
-    link: "https://astro-pic-of-the-day.vercel.app/",
-    github: "https://github.com/dapoadedire/astro-pic-of-the-day",
-    languages: ["React", "Vanilla CSS"],
-  },
+ 
   {
     id: 2,
     name: "BrainBusters",
@@ -55,15 +58,7 @@ const all_projects = [
     languages: ["React", "Tailwind CSS"],
   },
 
-  {
-    id: 0,
-    name: "GitIgnore CLI",
-    description:
-      "Python package that generates a .gitignore file for different programming languages. With this package, you can quickly and easily create a .gitignore file that will help you manage your Git repository by ignoring files that you don't want to track.",
-    link: "https://pypi.org/project/creategitignore/",
-    github: "https://github.com/dapoadedire/gitignore-cli",
-    languages: ["Python,", "PyPI"],
-  },
+  
 ];
 
 const Project = () => {
