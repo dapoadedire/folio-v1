@@ -68,7 +68,9 @@ const ContactMe = () => {
           <div className="loading-indicator">Sending email...</div>
         )}
       </div>
-      <button type="submit">Send</button>
+      <button type="submit"
+      
+      >Send Message</button>
     </form>
   );
 };
