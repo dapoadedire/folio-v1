@@ -16,17 +16,22 @@ const About = () => {
           <Italics text=" open-source software projects."/> I am a curious and dedicated individual who is always
           looking for new ways to grow and expand my knowledge and skills.
         </p>
-        <a href="/" target="_blank" rel="noreferrer">
-          <button className="resume">
-            Résumé/CV <FontAwesomeIcon icon={faFile} />
-          </button>
+        <a href="https://drive.google.com/file/d/1_AZLW0orxl290DNVYbxGubeCmxiaLZVR" target="_blank" rel="noreferrer">
+          
+            Résumé/CV 
+            <span className="fileicon">
+            <FontAwesomeIcon icon={faFile} />
+            </span>
+        
         </a>
-        <button className="about__sayhello">
+        <a 
+        href="mailto:adedireadedapo19@gmail.com" target="_blank" rel="noreferrer"
+        className="about__sayhello">
           Say Hello
           <span className="paper-plane">
             <FontAwesomeIcon icon={faPaperPlane} className="about__icon" />
           </span>
-        </button>
+        </a>
       </div>
       <div className="about__image">
         <img src={profile} alt="profile" />

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&display=swap');
 
 :root {
   --light-color: rgb(243, 240, 240);
@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  font-family: "Space Mono", monospace;
+  font-family: 'Open Sans', sans-serif;
   background: var(--light-color);
   color: var(--dark-color);
 }
@@ -70,6 +70,25 @@ header h2 a {
   color: var(--dark-color);
   font-size: 2rem;
   font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+   h2, h2 a  {
+    font-size: 1.5rem !important;
+  }
+  h3{
+    font-size: 1.2rem !important;
+  }
+  h4{
+    font-size: 1rem !important;
+  }
+  p{
+    font-size: 1rem !important;
+  }
+
+  span{
+    font-size: 0.9rem !important;
+  }
 }
 
 header .toggle {
@@ -169,7 +188,7 @@ html[data-theme="dark"] .about__container .about__content h2 {
   flex-grow: 1;
 }
 
-.about__content button {
+.about__content a {
   margin-top: 1rem;
   padding: 0.8rem 1rem;
   font-size: 1.5rem;
@@ -179,6 +198,23 @@ html[data-theme="dark"] .about__container .about__content h2 {
   transition: all 0.3s ease-in-out;
   border-radius: 5px;
   opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap : 1rem;
+  text-decoration: none;
+  
+  
+}
+
+.about__content a:hover {
+  opacity: 1;
+}
+
+html[data-theme="dark"] .about__content a {
+  border: 2px solid var(--dark-color);
+  background: var(--light-color);
+  color: var(--dark-color);
 }
 
 html[data-theme="dark"] button {
